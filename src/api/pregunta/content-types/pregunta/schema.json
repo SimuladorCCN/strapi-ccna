@@ -4,7 +4,8 @@
   "info": {
     "singularName": "pregunta",
     "pluralName": "preguntas",
-    "displayName": "pregunta"
+    "displayName": "pregunta",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,17 +17,22 @@
       "required": true
     },
     "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "respuestaOpcion": {
       "type": "component",
       "repeatable": true,
       "component": "answers-options.answers-options",
       "required": true
+    },
+    "opcionMultiple": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
