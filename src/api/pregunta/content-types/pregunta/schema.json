@@ -13,7 +13,7 @@
   "pluginOptions": {},
   "attributes": {
     "pregunta": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "imagen": {
